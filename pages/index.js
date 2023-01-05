@@ -2,7 +2,8 @@ import Head from 'next/head';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import Image from 'next/image';
-import avatar from '../public/world_wide_web_Monochromatic.png'
+import avatar from '../public/world_wide_web_Monochromatic.png';
+
 
 
 
@@ -31,17 +32,52 @@ export default function Home() {
           <div className='text-center p-10 '>
             <h2 className='text-5xl py-2 text-teal-600 font-medium'>First_Name Last_Name</h2>
             <h3 className=' text-2xl py-2'>Developer</h3>
-            <p className=' text-md py-5 leading-8 text-gray-800'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique reiciendis aspernatur saepe eveniet fugiat earum? Iusto laboriosam eveniet magnam fugit ea unde cumque molestiae ipsam amet? Eaque sunt ullam hic.</p>
+            <p className=' text-base py-5 leading-8 text-gray-800'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique reiciendis aspernatur saepe eveniet fugiat earum? Iusto laboriosam eveniet magnam fugit ea unde cumque molestiae ipsam amet? Eaque sunt ullam hic.</p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
             <AiFillLinkedin />
             <AiFillGithub />
           </div>
           <div className=" relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
-            <Image src={avatar}  layout="fill" objectFit='cover'/>
-        </div>
+            <Image src={avatar} fill style={{ objectFit: "cover" }} />
+          </div>
         </section>
-
+        <section>
+          <div className="">
+            <h3 className=' text-3xl py-1'>Services i offer</h3>
+            <p className='text-base py-2 leading-8 text-gray-800'>Lorem ipsum dolor sit, amet <span className='text-teal-500'>consectetur adipisicing</span> elit. Facere esse dolorem odio odit, repellendus itaque tempora cum consequuntur iusto. Necessitatibus quae ipsa sed veniam praesentium dignissimos laborum tempore voluptas quasi!</p>
+            <p className='text-base py-2 leading-8 text-gray-800'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur atque assumenda nulla repellat voluptates, eaque esse aliquam quasi omnis, odit enim necessitatibus quia suscipit reprehenderit, laboriosam porro nemo architecto sit.</p>
+          </div>
+          <div className="">
+            <div className=" text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={avatar} width={100} height={100} />
+              <h3 className=' text-lg font-medium pt-8 pb-2'>Lorem ipsum dolor</h3>
+              <p className=' py-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quibusdam, pariatur incidunt blanditiis sint quisquam cumque maxime illum, impedit omnis qui unde officia placeat asperiores corrupti velit quidem voluptates nam.</p>
+              <h4 className=' py-4 text-teal-600'>Tools I use</h4>
+              <p className='text-gray-800 py-1'>A</p>
+              <p className='text-gray-800 py-1'>B</p>
+              <p className='text-gray-800 py-1'>C</p>
+            </div>
+            <div className=" text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={avatar} width={100} height={100} />
+              <h3 className=' text-lg font-medium pt-8 pb-2'>Lorem ipsum dolor</h3>
+              <p className=' py-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quibusdam, pariatur incidunt blanditiis sint quisquam cumque maxime illum, impedit omnis qui unde officia placeat asperiores corrupti velit quidem voluptates nam.</p>
+              <h4 className=' py-4 text-teal-600'>Tools I use</h4>
+              <p className='text-gray-800 py-1'>A</p>
+              <p className='text-gray-800 py-1'>B</p>
+              <p className='text-gray-800 py-1'>C</p>
+            </div>
+            <div className=" text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={avatar} width={100} height={100} />
+              <h3 className=' text-lg font-medium pt-8 pb-2'>Lorem ipsum dolor</h3>
+              <p className=' py-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quibusdam, pariatur incidunt blanditiis sint quisquam cumque maxime illum, impedit omnis qui unde officia placeat asperiores corrupti velit quidem voluptates nam.</p>
+              <h4 className=' py-4 text-teal-600'>Tools I use</h4>
+              <p className='text-gray-800 py-1'>A</p>
+              <p className='text-gray-800 py-1'>B</p>
+              <p className='text-gray-800 py-1'>C</p>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
