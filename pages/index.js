@@ -1,5 +1,8 @@
 import Head from 'next/head';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import Image from 'next/image';
+import avatar from '../public/world_wide_web_Monochromatic.png'
 
 
 
@@ -25,6 +28,18 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+          <div className='text-center p-10 '>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium'>First_Name Last_Name</h2>
+            <h3 className=' text-2xl py-2'>Developer</h3>
+            <p className=' text-md py-5 leading-8 text-gray-800'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique reiciendis aspernatur saepe eveniet fugiat earum? Iusto laboriosam eveniet magnam fugit ea unde cumque molestiae ipsam amet? Eaque sunt ullam hic.</p>
+          </div>
+          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
+            <AiFillLinkedin />
+            <AiFillGithub />
+          </div>
+          <div className=" relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
+            <Image src={avatar}  layout="fill" objectFit='cover'/>
+        </div>
         </section>
 
       </main>
